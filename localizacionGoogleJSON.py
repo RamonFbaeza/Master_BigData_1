@@ -13,7 +13,7 @@ serviceurl = 'https://maps.googleapis.com/maps/api/geocode/json?'
 while True:
     address = input('Entrar ciudad: ')
     if len(address) < 1 : break
-    url = serviceurl + urllib.parse.urlencode({'sensor':'false','address':address,'key':'AIzaSyDRDhPvMeDqkojPCVvKeTr471lWM-thXr4'})
+    url = serviceurl + urllib.parse.urlencode({'sensor':'false','address':address,'key':''})
     print('Recuperando los datos de la ciudad', url)
     uh = urllib.request.urlopen(url)
     data = uh.read()
